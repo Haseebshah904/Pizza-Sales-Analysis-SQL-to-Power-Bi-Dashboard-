@@ -173,7 +173,7 @@ A comprehensive Power BI dashboard was created to visualize the insights from th
 + Sales trends by day and month provide insights for planning promotions and staffing.
 
 # Power bi Output
- ![Image Alt](image_url).
+ ![Image Alt](https://github.com/Haseebshah904/Pizza-Sales-Analysis-SQL-to-Power-Bi-Dashboard-/blob/main/Power%20bi%20Part1.PNG?raw=true).
  ![Image Alt](image_url). 
 # Recommendations
 
