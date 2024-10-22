@@ -173,8 +173,8 @@ A comprehensive Power BI dashboard was created to visualize the insights from th
 + Sales trends by day and month provide insights for planning promotions and staffing.
 
 # Power bi Output
-
-  
+ ![Image Alt](image_url).
+ ![Image Alt](image_url). 
 # Recommendations
 
 + Optimize Menu Offerings: Based on the top and bottom-performing pizzas, adjust the menu to focus on high-revenue items.
