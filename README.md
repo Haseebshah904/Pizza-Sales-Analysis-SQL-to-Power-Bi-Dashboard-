@@ -174,7 +174,7 @@ A comprehensive Power BI dashboard was created to visualize the insights from th
 
 # Power bi Output
  ![Image Alt](https://github.com/Haseebshah904/Pizza-Sales-Analysis-SQL-to-Power-Bi-Dashboard-/blob/main/Power%20bi%20Part1.PNG?raw=true).
- ![Image Alt](image_url). 
+ ![Image Alt](https://github.com/Haseebshah904/Pizza-Sales-Analysis-SQL-to-Power-Bi-Dashboard-/blob/main/Power%20bi%20Part2.PNG?raw=true). 
 # Recommendations
 
 + Optimize Menu Offerings: Based on the top and bottom-performing pizzas, adjust the menu to focus on high-revenue items.
