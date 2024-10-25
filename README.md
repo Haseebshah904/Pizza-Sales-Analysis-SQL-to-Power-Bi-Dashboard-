@@ -22,14 +22,12 @@ The dataset contains information about pizza sales, including details such as or
 
 ## SQL Query:
 
-+ Copy code
 + SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
   
 ## Average Order Value: The average amount spent per order.
 
 ## SQL Query:
 
-+ Copy code
 + SELECT (SUM(total_price) / COUNT(DISTINCT order_id)) AS Avg_order_Value 
 FROM pizza_sales;
 
@@ -37,21 +35,18 @@ FROM pizza_sales;
 
 ## SQL Query:
 
-+ Copy code
 + SELECT SUM(quantity) AS Total_pizza_sold FROM pizza_sales;
   
 ## Total Orders: The total number of orders placed.
 
 ## SQL Query:
 
-+ Copy code
 + SELECT COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales;
   
 ## Average Pizzas Per Order: The average number of pizzas sold per order.
 
 ## SQL Query:
 
-+ Copy code
 + SELECT CAST(SUM(quantity) AS DECIMAL(10,2)) / CAST(COUNT(DISTINCT order_id) AS DECIMAL(10,2)) 
 AS Avg_Pizzas_per_order 
 FROM pizza_sales;
@@ -62,7 +57,7 @@ FROM pizza_sales;
 
 SQL Query:
 sql
-Copy code
+
 SELECT DATENAME(DW, order_date) AS order_day, COUNT(DISTINCT order_id) AS total_orders  
 FROM pizza_sales 
 GROUP BY DATENAME(DW, order_date);
@@ -70,7 +65,6 @@ Monthly Sales Trends: The number of orders placed each month.
 
 ## SQL Query:
 
-+ Copy code
 + SELECT DATENAME(MONTH, order_date) as Month_Name, COUNT(DISTINCT order_id) as Total_Orders 
 FROM pizza_sales 
 GROUP BY DATENAME(MONTH, order_date);
@@ -81,7 +75,6 @@ GROUP BY DATENAME(MONTH, order_date);
 
 ## SQL Query:
 
-+ Copy code
 + SELECT pizza_category, CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue, 
 CAST(SUM(total_price) * 100 / (SELECT SUM(total_price) from pizza_sales) AS DECIMAL(10,2)) AS PCT 
 FROM pizza_sales 
@@ -91,7 +84,6 @@ GROUP BY pizza_category;
 
 ## SQL Query:
 
-+Copy code
 +SELECT pizza_size, CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue, 
 CAST(SUM(total_price) * 100 / (SELECT SUM(total_price) from pizza_sales) AS DECIMAL(10,2)) AS PCT 
 FROM pizza_sales 
@@ -103,7 +95,6 @@ GROUP BY pizza_size;
 
 ## SQL Query:
 
-+ Copy code
 + SELECT Top 5 pizza_name, SUM(total_price) AS Total_Revenue 
 FROM pizza_sales 
 GROUP BY pizza_name 
@@ -113,7 +104,6 @@ ORDER BY Total_Revenue DESC;
 
 ## SQL Query:
 
-+ Copy code
 + SELECT TOP 5 pizza_name, SUM(total_price) AS Total_Revenue 
 FROM pizza_sales 
 GROUP BY pizza_name 
@@ -123,7 +113,6 @@ ORDER BY Total_Revenue ASC;
 
 ## SQL Query:
 
-+ Copy code
 + SELECT Top 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold 
 FROM pizza_sales 
 GROUP BY pizza_name 
@@ -133,7 +122,6 @@ ORDER BY Total_Pizza_Sold DESC;
 
 ## SQL Query:
 
-+ Copy code
 + SELECT TOP 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold 
 FROM pizza_sales 
 GROUP BY pizza_name 
@@ -154,7 +142,6 @@ A comprehensive Power BI dashboard was created to visualize the insights from th
 ## Clone the repository:
 
 + bash
-+ Copy code
 + git clone https://github.com/your-username/pizza-sales-analysis.git
   
 ## Set up the SQL database:
